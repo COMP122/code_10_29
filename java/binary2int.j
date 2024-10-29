@@ -2,11 +2,15 @@ public static int binary2int () {
 
   //  number = number * 2 + git_bit()
 
-  for( digit = bit2int(); digit != -1 ; digit = bit2int(); ) {
+  int digit;
+  int number = 0;
 
+  for( digit = bit2int(); digit != -1 ; digit = bit2int() ) {
+
+    number = number * 2 + digit;
 
   }
-  return digit;
+  return number;
 
 }
 
