@@ -16,6 +16,7 @@ body:       ;
             number = number + digit;
 next:       ; 
             digit = bit2int();
+            break sam;
          }
 done:    ;         
 
