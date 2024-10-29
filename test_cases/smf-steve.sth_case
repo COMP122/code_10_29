@@ -1,0 +1,41 @@
+[default]
+DRIVER=java_subroutine
+ARGS=""
+
+# binary2int tests case
+[case]
+ENTRY="binary2int"
+INPUT="0111"
+OUTPUT="7"
+EXIT_STATUS="IGNORE"
+
+[case]
+ENTRY="binary2int"
+INPUT="01010"
+OUTPUT="10"
+EXIT_STATUS="IGNORE"
+
+
+
+# Bit2int test case
+[case]
+ENTRY="bit2int"
+OPTIONS="-L binary2int.j"
+INPUT="0"
+OUTPUT="0"
+EXIT_STATUS="IGNORE"
+
+[case]
+ENTRY="bit2int"
+OPTIONS="-L binary2int.j"
+INPUT="1"
+OUTPUT="1"
+EXIT_STATUS="IGNORE"
+
+
+[case]
+ENTRY="bit2int"
+OPTIONS="-L binary2int.j"
+INPUT="A"
+OUTPUT="-1"
+EXIT_STATUS="IGNORE"
