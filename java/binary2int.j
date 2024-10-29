@@ -1,17 +1,14 @@
+// binary2int converts a string of binary digits into an integer
 public static int binary2int () {
-
-  //  number = number * 2 + git_bit()
 
   int digit;
   int number = 0;
 
   for( digit = bit2int(); digit != -1 ; digit = bit2int() ) {
-
-    number = number * 2 + digit;
-
+     number = (number << 1) + digit;
   }
-  return number;
 
+  return number;
 }
 
 
@@ -22,8 +19,6 @@ public static int binary2int () {
 //   * 0 if '0'
 //   * 1 if '1'
 //   * -1 otherwise
-
-
 public static int bit2int() {
 
    int value;
